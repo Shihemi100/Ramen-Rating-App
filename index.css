@@ -1,0 +1,97 @@
+/* Center the entire page */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #fffaf0;
+}
+
+/* Ramen Menu */
+#ramen-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+}
+
+/* Style ramen images */
+#ramen-menu img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+#ramen-menu img:hover {
+    border-color: #ff6347;
+    transform: scale(1.1);
+}
+
+/* Ramen Details Section */
+#ramen-detail {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    width: 300px;
+}
+
+/* Slideshow Image */
+#detail-image {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Center text in details */
+#detail-name, #detail-restaurant, #detail-rating, #detail-comment {
+    margin: 5px 0;
+}
+
+#new-ramen {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffe4c4;
+    padding: 15px;
+    border-radius: 5px;
+    width: 320px;
+}
+
+/* Style input fields */
+#new-ramen input, #new-ramen textarea {
+    margin-bottom: 10px;
+    width: 250px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+/* Submit Button */
+#new-ramen button {
+    padding: 5px 10px;
+    background-color: #ff6347;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#new-ramen button:hover {
+    background-color:pink;
+}
